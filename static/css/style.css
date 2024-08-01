@@ -1,0 +1,130 @@
+/* Reset some default styles */
+body, h1, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fef8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eef5ec;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #5aa2f0;
+}
+
+/* Chat container styling */
+.chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.chat-box {
+    width: 400px;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.message {
+    margin-bottom: 10px;
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.message.bot {
+    background-color: #443735ba;
+    text-align: left;
+    color: #fff;
+
+}
+
+
+.message.user {
+    background-color: #0f9526;
+    color: #fff;
+    text-align: right;
+    margin-left: auto;
+}
+
+.timestamp {
+    font-size: 0.75em;
+    color: #651108;
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.chat-input {
+    display: flex;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Error styling */
+.error {
+    color: #d9534f;
+    background-color: #f2dede;
+    border: 1px solid #d9534f;
+    padding: 10px;
+    border-radius: 4px;
+}
