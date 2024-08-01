@@ -1,1 +1,3 @@
-![Description of the image](images/auto sales.png)
+
+![Description of the image](images/auto sales.PNG)
+
